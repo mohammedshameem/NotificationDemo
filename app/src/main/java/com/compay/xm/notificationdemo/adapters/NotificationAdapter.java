@@ -64,6 +64,16 @@ public class NotificationAdapter extends BaseAdapter{
         if (UtilValidate.isNotNull(NotificationList)){
             if (UtilValidate.isNotNull(NotificationList.get(position).getNotification_type())){
                 if (NotificationList.get(position).getNotification_type().equals("1")){
+                    mViewHolder.item_image.setVisibility(View.VISIBLE);
+                    message.append("You have liked  " + NotificationList.get(position).getProductObject().getName());
+                    mViewHolder.notificationMessage.setText(message);
+
+                } else if (NotificationList.get(position).getNotification_type().equals("2")) {
+
+                    //viewHolder.tvUserName.setVisibility(View.GONE);
+                    mViewHolder.item_image.setVisibility(View.VISIBLE);
+                    message.append("You have commented on " + NotificationList.get(position).getProductObject().getName());
+                    mViewHolder.notificationMessage.setText(message);
 
                 }
             }

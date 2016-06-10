@@ -20,6 +20,14 @@ public class Data implements Serializable
 
     private String user_firstname;
 
+    public Product getProductObject() {
+        return productObject;
+    }
+
+    public void setProductObject(Product productObject) {
+        this.productObject = productObject;
+    }
+
     private String product;
 
     private String id;
