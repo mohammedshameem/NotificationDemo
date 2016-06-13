@@ -6,110 +6,32 @@ import java.io.Serializable;
  * Created by vivek on 10/6/16.
  */
 public class Data implements Serializable {
-    private Product productObject;
 
 
-    private String membershipPrice;
-
-    private String notification_type;
-
-    private String user_lastname;
-
-    private String paymentStatus;
-
-    private String user_firstname;
-
-    public Product getProductObject() {
-        return productObject;
-    }
-
-    public void setProductObject(Product productObject) {
-        this.productObject = productObject;
-    }
-
-    private String product;
-
-    private String id;
-
-    private String message;
-
+    private Product product;
     private String membershipId;
-
     private String membershipType;
-
-    private String description;
-
-    private String dcraetedDate;
-
-    private String user_id;
-
+    private String membershipPrice;
     private Referer referer;
-
+    private int id;
+    private String user_firstname;
+    private String user_lastname;
+    private int user_id;
     private String user_profilePic;
+    private String paymentStatus;
+    private String message;
+    private String description;
+    private String dcraetedDate;
+    private String notification_type;
+    //private String product;
 
 
-    public String getMembershipPrice() {
-        return membershipPrice;
-    }
-
-    public void setMembershipPrice(String membershipPrice) {
-        this.membershipPrice = membershipPrice;
-    }
-
-    public String getNotification_type() {
-        return notification_type;
-    }
-
-    public void setNotification_type(String notification_type) {
-        this.notification_type = notification_type;
-    }
-
-    public String getUser_lastname() {
-        return user_lastname;
-    }
-
-    public void setUser_lastname(String user_lastname) {
-        this.user_lastname = user_lastname;
-    }
-
-    public String getPaymentStatus() {
-        return paymentStatus;
-    }
-
-    public void setPaymentStatus(String paymentStatus) {
-        this.paymentStatus = paymentStatus;
-    }
-
-    public String getUser_firstname() {
-        return user_firstname;
-    }
-
-    public void setUser_firstname(String user_firstname) {
-        this.user_firstname = user_firstname;
-    }
-
-    public String getProduct() {
+    public Product getProduct() {
         return product;
     }
 
-    public void setProduct(String product) {
+    public void setProduct(Product product) {
         this.product = product;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
     }
 
     public String getMembershipId() {
@@ -128,6 +50,78 @@ public class Data implements Serializable {
         this.membershipType = membershipType;
     }
 
+    public String getMembershipPrice() {
+        return membershipPrice;
+    }
+
+    public void setMembershipPrice(String membershipPrice) {
+        this.membershipPrice = membershipPrice;
+    }
+
+    public Referer getReferer() {
+        return referer;
+    }
+
+    public void setReferer(Referer referer) {
+        this.referer = referer;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getUser_firstname() {
+        return user_firstname;
+    }
+
+    public void setUser_firstname(String user_firstname) {
+        this.user_firstname = user_firstname;
+    }
+
+    public String getUser_lastname() {
+        return user_lastname;
+    }
+
+    public void setUser_lastname(String user_lastname) {
+        this.user_lastname = user_lastname;
+    }
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
+    }
+
+    public String getUser_profilePic() {
+        return user_profilePic;
+    }
+
+    public void setUser_profilePic(String user_profilePic) {
+        this.user_profilePic = user_profilePic;
+    }
+
+    public String getPaymentStatus() {
+        return paymentStatus;
+    }
+
+    public void setPaymentStatus(String paymentStatus) {
+        this.paymentStatus = paymentStatus;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -144,30 +138,11 @@ public class Data implements Serializable {
         this.dcraetedDate = dcraetedDate;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getNotification_type() {
+        return notification_type;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setNotification_type(String notification_type) {
+        this.notification_type = notification_type;
     }
-
-    public Referer getReferer() {
-        return referer;
-    }
-
-    public void setReferer(Referer referer) {
-        this.referer = referer;
-    }
-
-    public String getUser_profilePic() {
-        return user_profilePic;
-    }
-
-    public void setUser_profilePic(String user_profilePic) {
-        this.user_profilePic = user_profilePic;
-    }
-
-
-
 }

@@ -10,43 +10,31 @@ public class ProductNotification implements Serializable {
 
 
     private String status;
-
-    public List<Data> getDataObject() {
-        return dataObject;
-    }
-
-    public void setDataObject(List<Data> dataObject) {
-        this.dataObject = dataObject;
-    }
-
-    private List<Data> dataObject;
+    private List<Data> data;
+    private int code;
 
 
-
-    private String code;
-
-    public String getStatus ()
-    {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus (String status)
-    {
+    public void setStatus(String status) {
         this.status = status;
     }
 
+    public List<Data> getData() {
+        return data;
+    }
 
+    public void setData(List<Data> data) {
+        this.data = data;
+    }
 
-
-    public String getCode ()
-    {
+    public int getCode() {
         return code;
     }
 
-    public void setCode (String code)
-    {
+    public void setCode(int code) {
         this.code = code;
     }
-
-
 }

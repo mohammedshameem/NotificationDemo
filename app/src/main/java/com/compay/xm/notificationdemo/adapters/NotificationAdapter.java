@@ -27,7 +27,7 @@ public class NotificationAdapter extends BaseAdapter{
     StringBuilder message;
 
 
-    public NotificationAdapter(Context context, ArrayList<Data> NotificationList) {
+    public NotificationAdapter(Context context, List<Data> NotificationList) {
         this.NotificationList = NotificationList;
         this.context = context;
         inflater = LayoutInflater.from(this.context);
@@ -68,14 +68,14 @@ public class NotificationAdapter extends BaseAdapter{
             if (UtilValidate.isNotNull(NotificationList.get(position).getNotification_type())){
                 if (NotificationList.get(position).getNotification_type().equals("1")){
                     mViewHolder.item_image.setVisibility(View.VISIBLE);
-                    message.append("You have liked  " + NotificationList.get(position).getProductObject().getName());
+                    message.append("You have liked  " + NotificationList.get(position).getProduct().getName());
                     mViewHolder.notificationMessage.setText(message);
 
                 } else if (NotificationList.get(position).getNotification_type().equals("2")) {
 
                     //viewHolder.tvUserName.setVisibility(View.GONE);
                     mViewHolder.item_image.setVisibility(View.VISIBLE);
-                    message.append("You have commented on " + NotificationList.get(position).getProductObject().getName());
+                    message.append("You have commented on " + NotificationList.get(position).getProduct().getName());
                     mViewHolder.notificationMessage.setText(message);
 
                 }
@@ -83,7 +83,7 @@ public class NotificationAdapter extends BaseAdapter{
                     //Here type it...
                     //viewHolder.tvUserName.setVisibility(View.GONE);
                     mViewHolder.item_image.setVisibility(View.VISIBLE);
-                    message.append("You have purchased " + NotificationList.get(position).getProductObject().getName());
+                    message.append("You have purchased " + NotificationList.get(position).getProduct().getName());
                     mViewHolder.notificationMessage.setText(message);
                 }
             }

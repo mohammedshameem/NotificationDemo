@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NotificationDemo</string>
+    <string name="no_notification"> There are no notifications to display!! </string>
+
 </resources>
