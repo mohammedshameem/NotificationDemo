@@ -5,8 +5,7 @@ import java.io.Serializable;
 /**
  * Created by vivek on 10/6/16.
  */
-public class Data implements Serializable
-{
+public class Data implements Serializable {
     private Product productObject;
 
 

@@ -56,6 +56,9 @@ public class NotificationAdapter extends BaseAdapter{
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.layout_list_item, parent, false);
             mViewHolder = new MyViewHolder(convertView);
+
+
+
             convertView.setTag(mViewHolder);
         } else {
             mViewHolder = (MyViewHolder) convertView.getTag();
@@ -76,14 +79,21 @@ public class NotificationAdapter extends BaseAdapter{
                     mViewHolder.notificationMessage.setText(message);
 
                 }
+                else if (NotificationList.get(position).getNotification_type().equals("3")){
+                    //Here type it...
+                    //viewHolder.tvUserName.setVisibility(View.GONE);
+                    mViewHolder.item_image.setVisibility(View.VISIBLE);
+                    message.append("You have purchased " + NotificationList.get(position).getProductObject().getName());
+                    mViewHolder.notificationMessage.setText(message);
+                }
             }
         }
 
 
-        mViewHolder.tvTitle.setText(flowerList.get(position).getName());
+        /*mViewHolder.tvTitle.setText(flowerList.get(position).getName());
         mViewHolder.tvDesc.setText(flowerList.get(position).getInstructions());
         String imageURL = flowerListData.getPhoto();
-        Picasso.with(context).load(imageURL).into(mViewHolder.ivIcon); //Always viewholderConstructor.anyView
+        Picasso.with(context).load(imageURL).into(mViewHolder.ivIcon); //Always viewholderConstructor.anyView*/
         return convertView;
     }
 

@@ -5,8 +5,7 @@ import java.io.Serializable;
 /**
  * Created by vivek on 10/6/16.
  */
-public class Product implements Serializable
-{
+public class Product implements Serializable {
     private String shippingcharge;
 
     private String share_count;
